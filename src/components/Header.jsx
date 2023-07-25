@@ -34,10 +34,10 @@ function Header() {
                 </button>
               </div>
               <div className='flex flex-col px-[32px] gap-[32px] font-barlow-condensed text-[16px] tracking-[2.7px]'>
-                <Link href="/"><span className='font-bold pr-[11px]'>00</span>HOME</Link>
-                <Link href="/destination"><span className='font-bold pr-[11px]'>01</span>DESTINATION</Link>
-                <Link href="/crew"><span className='font-bold pr-[11px]'>02</span>CREW</Link>
-                <Link href="/technology"><span className='font-bold pr-[11px]'>03</span>TECHNOLOGY</Link>
+                <Link href="/" onClick={() => setNavbar(!navbar)}><span className='font-bold pr-[11px]'>00</span>HOME</Link>
+                <Link href="/destination" onClick={() => setNavbar(!navbar)}><span className='font-bold pr-[11px]'>01</span>DESTINATION</Link>
+                <Link href="/crew" onClick={() => setNavbar(!navbar)}><span className='font-bold pr-[11px]'>02</span>CREW</Link>
+                <Link href="/technology" onClick={() => setNavbar(!navbar)}><span className='font-bold pr-[11px]'>03</span>TECHNOLOGY</Link>
               </div>
             </div>
           )}
