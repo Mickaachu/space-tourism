@@ -5,7 +5,7 @@ import {useState} from "react"
 function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className='flex items-center justify-between fixed top-0 left-0 right-0'>
+    <div className='flex items-center justify-between fixed top-0 left-0 right-0 z-50'>
         <div className='py-[24px] px-[24px]'>
           
           <Image src="/shared/logo.svg" width={48} height={48} />
