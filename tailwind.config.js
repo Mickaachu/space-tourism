@@ -12,6 +12,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'barlow': ['Barlow', 'sans-serif'],
+        'barlow-condensed': ['Barlow Condensed', 'sans-serif'],
+        'belfair': ['Belfair', 'serif'],
+      },
+      colors: {
+        'navbar': '#ffffff0a',
+      },
     },
   },
   plugins: [],

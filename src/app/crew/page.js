@@ -1,10 +1,9 @@
-
 function crew() {
     return (
       <main>
-  
+        crew
       </main>
     )
   }
   
-  export default destination
+  export default crew;

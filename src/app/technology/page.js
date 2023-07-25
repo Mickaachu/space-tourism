@@ -2,7 +2,7 @@
 function technology() {
     return (
       <main>
-  
+        technology
       </main>
     )
   }

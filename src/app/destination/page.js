@@ -1,4 +1,3 @@
-
 function destination() {
   return (
     <main>
