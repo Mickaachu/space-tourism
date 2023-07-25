@@ -2,9 +2,9 @@ import Image from 'next/image';
 function technology() {
     return (
       <main className="flex flex-col justify-center items-center pt-[89px]
-      bg-[url('/destination/background-destination-mobile.jpg')] bg-cover bg-no-repeat ">
+      bg-[url('/technology/background-technology-mobile.jpg')] bg-cover bg-no-repeat ">
         <p className='font-barlow-condensed tracking-[2.7px]'><span className='pr-[18px] font-bold opacity-[0.25]'>03</span>SPACE LUNCH 101</p>
-        <div className="relative w-full max-w-[768px] h-[117px] md:h-[310px] mt-[32px] mb-[34px]">
+        <div className="relative w-full max-w-[768px] h-[170px] md:h-[310px] mt-[32px] mb-[34px]">
           <Image src='/technology/image-launch-vehicle-landscape.jpg' fill />
         </div>
         <div className='text-center pb-[32px] mx-[24px] '>

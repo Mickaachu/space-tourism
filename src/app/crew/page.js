@@ -3,7 +3,7 @@ import Image from "next/image";
 function crew() {
     return (
       <main className="flex flex-col justify-center items-center pt-[89px]
-      bg-[url('/destination/background-destination-mobile.jpg')] bg-cover bg-no-repeat">
+      bg-[url('/crew/background-crew-mobile.jpg')] bg-cover bg-no-repeat">
         <p className='font-barlow-condensed tracking-[2.7px]'><span className='pr-[18px] font-bold opacity-[0.25]'>02</span> MEET YOUR CREW</p>
         <Image src='/crew/image-douglas-hurley.png' width={178} height={222} className='mt-[32px] mb-[75px]'/>
         
