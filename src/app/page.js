@@ -4,7 +4,10 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-end items-center
       text-[#D0D6F9] pb-[48px] md:pb-[90px] pt-[112px] md:pt-[202px] px-[24px] md:pl-[162px] md:pr-[162px]
-      bg-[url('/home/background-home-mobile.jpg')] bg-cover bg-no-repeat"
+      bg-[url('/home/background-home-mobile.jpg')]
+      sm:bg-[url('/home/background-home-tablet.jpg')]
+      lg:bg-[url('/home/background-home-desktop.jpg')] 
+      bg-cover bg-no-repeat"
      >
       <p className='font-barlow-condensed md:text-[24px]' >SO, YOU WANT TO TRAVEL TO</p>
       <h1 className='text-white font-belfair text-[80px] md:text-[150px]'>SPACE</h1>
