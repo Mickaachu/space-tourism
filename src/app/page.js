@@ -7,17 +7,21 @@ export default function Home() {
       bg-[url('/home/background-home-mobile.jpg')]
       sm:bg-[url('/home/background-home-tablet.jpg')]
       lg:bg-[url('/home/background-home-desktop.jpg')]
-      bg-cover bg-no-repeat w-full h-full"
+      bg-cover bg-no-repeat w-full h-full
+      lg:flex-row lg:justify-between
+      "
      >
-      <p className='font-barlow-condensed md:text-[24px]' >SO, YOU WANT TO TRAVEL TO</p>
-      <h1 className='text-white font-belfair text-[80px] md:text-[150px]'>SPACE</h1>
-      <p className=' text-center'>
-        Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
-      </p>
-      <div className='pt-[80px] md:pt-[156px]'>
-      <button className='w-[150px] h-[150px] md:w-[242px] md:h-[242px] bg-white rounded-full text-black 
-      font-belfair text-[20px]  font-normal tracking-[1.25px]'>EXPLORE</button>
+      <div>
+        <p className='font-barlow-condensed md:text-[24px] lg:text-[28px] ' >SO, YOU WANT TO TRAVEL TO</p>
+        <h1 className='text-white font-belfair text-[80px] md:text-[150px]'>SPACE</h1>
+        <p className=' text-center lg:max-w-[444px] lg:text-left lg:text-[18px]'>
+          Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+        </p>
       </div>
+      <div className='pt-[80px] md:pt-[156px] lg:pt-[74px]'>
+        <button className='w-[150px] h-[150px] md:w-[242px] md:h-[242px] bg-white rounded-full text-black 
+        font-belfair text-[20px]  font-normal tracking-[1.25px]'>EXPLORE</button>
+        </div>
     </main>
   )
 }
