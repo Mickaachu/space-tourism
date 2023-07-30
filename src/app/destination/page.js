@@ -7,7 +7,7 @@ function destination() {
       bg-[url('/destination/background-destination-mobile.jpg')]
       sm:bg-[url('/destination/background-destination-tablet.jpg')] 
       lg:bg-[url('/destination/background-destination-desktop.jpg')] 
-      bg-cover bg-no-repeat">
+      bg-cover bg-no-repeat w-full h-full">
       <div className='flex justify-center items-center
        md:justify-start md:pl-[38px] w-full '>
       <p className='font-barlow-condensed tracking-[2.7px]'><span className='pr-[18px] font-bold opacity-[0.25]'>01</span> PICK YOUR DESTINATION</p>

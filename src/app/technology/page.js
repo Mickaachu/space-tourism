@@ -6,7 +6,7 @@ function technology() {
         bg-[url('/technology/background-technology-mobile.jpg')]
         sm:bg-[url('/technology/background-technology-tablet.jpg')]
         lg:sm:bg-[url('/technology/background-technology-desktop.jpg')] 
-        bg-cover bg-no-repeat ">
+        bg-cover bg-no-repeat w-full h-full">
         <div className='flex justify-center sm:justify-start w-full sm:pl-[38px]'><p className='font-barlow-condensed tracking-[2.7px]'><span className='pr-[18px] font-bold opacity-[0.25]'>03</span>SPACE LUNCH 101</p></div>
         <div className="relative w-full max-w-[773px] h-[170px] sm:h-[310px] mt-[32px] mb-[34px]">
           <Image src='/technology/image-launch-vehicle-landscape.jpg' fill />
