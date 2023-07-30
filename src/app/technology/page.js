@@ -1,7 +1,7 @@
 import Image from 'next/image';
 function technology() {
     return (
-      <main className="flex flex-col justify-center items-center pt-[89px]
+      <main className="flex flex-col justify-center items-center pt-[89px] md:pt-[106px]
       bg-[url('/technology/background-technology-mobile.jpg')] bg-cover bg-no-repeat ">
         <p className='font-barlow-condensed tracking-[2.7px]'><span className='pr-[18px] font-bold opacity-[0.25]'>03</span>SPACE LUNCH 101</p>
         <div className="relative w-full max-w-[768px] h-[170px] md:h-[310px] mt-[32px] mb-[34px]">
