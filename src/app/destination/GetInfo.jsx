@@ -65,10 +65,25 @@ const animation = (ordinate) => {
             </div>
             <div>
                 <div className="flex gap-[26px] justify-center items-center">
-                <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0.5, 2)} onClick={() => planetSelection(0)} disabled={planet == destination[0]}>MOON</motion.button>
-                <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1, 2)} onClick={() => planetSelection(1)} disabled={planet == destination[1]}>MARS</motion.button>
-                <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1.5, 2)} onClick={() => planetSelection(2)} disabled={planet == destination[2]}>EUROPA</motion.button>
-                <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(2, 2)} onClick={() => planetSelection(3)} disabled={planet == destination[3]}>TITAN</motion.button>
+                <motion.button variants={animation("y")} animate="visible" initial="hidden"
+                     transition={transistion(0.5, 2)} onClick={() => planetSelection(0)} disabled={planet == destination[0]}
+                    className={planet === destination[0] ? 'border-b-[3px]' : ''}
+                >MOON</motion.button>
+                <motion.button variants={animation("y")} animate="visible" 
+                    initial="hidden" transition={transistion(1, 2)} onClick={() => planetSelection(1)} 
+                    disabled={planet == destination[1]}
+                    className={planet === destination[1] ? 'border-b-[3px]' : ''}
+                >MARS</motion.button>
+                <motion.button variants={animation("y")} animate="visible" initial="hidden" 
+                    transition={transistion(1.5, 2)} onClick={() => planetSelection(2)} 
+                    disabled={planet == destination[2]}
+                    className={planet === destination[2] ? 'border-b-[3px]' : ''}
+                    >EUROPA</motion.button>
+                <motion.button variants={animation("y")} animate="visible" 
+                    initial="hidden" transition={transistion(2, 2)} 
+                    onClick={() => planetSelection(3)} disabled={planet == destination[3]}
+                    className={planet === destination[3] ? 'border-b-[3px]' : ''}
+                    >TITAN</motion.button>
 
                 </div>
                 <div  className='text-center

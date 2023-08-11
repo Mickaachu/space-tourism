@@ -53,21 +53,58 @@ return(
         <div className="flex flex-col justify-center 
         items-center md:flex-col-reverse 
         lg:flex-row-reverse lg:justify-left lg:gap-[81px]">
-            <div className="border-b border-[#313b77] flex justify-center md:align-bottom sm:w-[327px] md:border-none mt-[32px] 
+            <div className="border-b border-[#313b77] flex justify-center 
+            md:align-bottom sm:w-[327px] md:border-none mt-[32px] 
             mb-[75px] md:mb-[0px] lg:w-auto">
-                <motion.div variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0.5, 2)}  className='crewImage relative  w-[177px] md:w-[456px]
+                <motion.div variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0.5, 2)}  
+                className='crewImage relative  w-[177px] md:w-[456px] ml-[30px] lg:ml-0
                 h-[222px] md:h-[572px]'>
                     <Image src={member.images?.png} priority fill alt={member.name} sizes="(max-width: 768px) 100vw"/>
                 </motion.div>
 
             </div>
 
-            <div className="flex flex-col md:flex-col-reverse">
+            <div className="flex flex-col md:flex-col-reverse justify-center items-center">
                 <div className="flex gap-[16px]">
-                    <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0, 2)} onClick={() => handleClick(0)} className="w-[5px] h-[5px] bg-white border-1/2" disabled={member == crew[0]}></motion.button>
-                    <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0.5, 2)} onClick={() => handleClick(1)}   className="w-[5px] h-[5px] bg-white" disabled={member == crew[1]}></motion.button>
-                    <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1, 2)} onClick={() => handleClick(2)}  className="w-[5px] h-[5px] bg-white" disabled={member == crew[2]} ></motion.button>
-                    <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1.5, 2)} onClick={() => handleClick(3)}  className="w-[5px] h-[5px] bg-white" disabled={member == crew[3]}></motion.button>
+                    <motion.button variants={animation("y")} 
+                    animate="visible" 
+                    initial="hidden" transition={transistion(0, 2)} 
+                    onClick={() => handleClick(0)} 
+                    className={member == crew[0] 
+                        ? "w-[15px] h-[15px] rounded-full bg-white border-1/2" 
+                        : "w-[15px] h-[15px] rounded-full border-1/2 bg-neutral-300 " } 
+                    disabled={member == crew[0]}
+                    ></motion.button>
+
+                    <motion.button 
+                    variants={animation("y")} 
+                    animate="visible" initial="hidden"
+                    transition={transistion(0.5, 2)} onClick={() => handleClick(1)}   
+                    className={member == crew[1] 
+                        ? "w-[15px] h-[15px] rounded-full bg-white border-1/2" 
+                        : "w-[15px] h-[15px] rounded-full border-1/2 bg-neutral-300 " } 
+                        disabled={member == crew[1]}
+                    ></motion.button>
+                    <motion.button 
+                    variants={animation("y")} 
+                    animate="visible" initial="hidden" 
+                    transition={transistion(1, 2)}
+                    onClick={() => handleClick(2)}  
+                    className={member == crew[2] 
+                        ? "w-[15px] h-[15px] rounded-full bg-white border-1/2" 
+                        : "w-[15px] h-[15px] rounded-full border-1/2 bg-neutral-300 " } 
+                    disabled={member == crew[2]} 
+                    ></motion.button>
+                    <motion.button 
+                    variants={animation("y")} 
+                    animate="visible"
+                    initial="hidden" transition={transistion(1.5, 2)}
+                    onClick={() => handleClick(3)}  
+                    className={member == crew[3] 
+                        ? "w-[15px] h-[15px] rounded-full bg-white border-1/2" 
+                        : "w-[15px] h-[15px] rounded-full border-1/2 bg-neutral-300 " } 
+                    disabled={member == crew[3]}
+                    ></motion.button>
                 </div>
                 <div className='text-center pb-[32px] mx-[24px] lg:text-left lg:mx-0'>
                     <motion.p  variants={animation("x")} animate="visible" initial="hidden" transition={transistion(1.8, 2)} className=' crewRole font-belfair opacity-[0.5] md:text-[24px]'>{member.role}</motion.p>

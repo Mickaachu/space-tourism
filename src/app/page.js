@@ -28,6 +28,8 @@ export default function Home() {
       lg:bg-[url('/home/background-home-desktop.jpg')]
       bg-cover bg-no-repeat w-full h-full
       lg:flex-row lg:justify-between
+      xl:h-screen
+      lg:gap-[100px]
       "
      >
       <div>
