@@ -66,7 +66,7 @@ return(
                 <div className="flex gap-[16px]">
                     <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0, 2)} onClick={() => handleClick(0)} className="w-[5px] h-[5px] bg-white border-1/2" disabled={member == crew[0]}></motion.button>
                     <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(0.5, 2)} onClick={() => handleClick(1)}   className="w-[5px] h-[5px] bg-white" disabled={member == crew[1]}></motion.button>
-                    <motionbutton variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1, 2)} onClick={() => handleClick(2)}  className="w-[5px] h-[5px] bg-white" disabled={member == crew[2]} ></motionbutton>
+                    <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1, 2)} onClick={() => handleClick(2)}  className="w-[5px] h-[5px] bg-white" disabled={member == crew[2]} ></motion.button>
                     <motion.button variants={animation("y")} animate="visible" initial="hidden" transition={transistion(1.5, 2)} onClick={() => handleClick(3)}  className="w-[5px] h-[5px] bg-white" disabled={member == crew[3]}></motion.button>
                 </div>
                 <div className='text-center pb-[32px] mx-[24px] lg:text-left lg:mx-0'>
