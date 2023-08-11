@@ -3,7 +3,7 @@ import {getData} from "../get-data";
 export default async function destination() {
   const data = await getData();
   const {destinations} = data;
-  console.log(destinations)
+  
   return (
     <main className="flex flex-col justify-center 
       items-center pt-[89px] md:pt-[136px]
