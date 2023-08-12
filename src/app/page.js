@@ -33,9 +33,15 @@ export default function Home() {
       "
      >
       <div>
-        <motion.p transition={transistion(0.5,2)}  variants={fromLeft} initial="hidden" animate="visible" className='font-barlow-condensed md:text-[24px] lg:text-[28px] ' >SO, YOU WANT TO TRAVEL TO</motion.p>
-        <motion.h1 transition={transistion(1,2)}  variants={fromLeft} initial="hidden" animate="visible" className='text-white font-belfair text-[80px] md:text-[150px]'>SPACE</motion.h1>
-        <motion.p transition={transistion(1.5,2)}  variants={fromLeft} initial="hidden" animate="visible" className=' text-center lg:max-w-[444px] lg:text-left lg:text-[18px]'>
+        <motion.p transition={transistion(0.5,2)}  
+          variants={fromLeft} initial="hidden" animate="visible" 
+          className='font-barlow-condensed md:text-[24px] lg:text-[28px] ' >SO, YOU WANT TO TRAVEL TO</motion.p>
+        <motion.h1 transition={transistion(1,2)}  
+          variants={fromLeft} initial="hidden" animate="visible" 
+          className='text-white font-belfair text-[80px] md:text-[150px]'>SPACE</motion.h1>
+        <motion.p transition={transistion(1.5,2)}  
+          variants={fromLeft} initial="hidden" animate="visible" 
+          className=' text-center lg:max-w-[444px] lg:text-left lg:text-[18px]'>
           Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
         </motion.p>
       </div>

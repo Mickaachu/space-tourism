@@ -3,10 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
 import {usePathname} from 'next/navigation';
+import {  motion, useCycle, AnimatePresence} from "framer-motion";
 
 function Header() {
   const [navbar, setNavbar] = useState(false);
+  const [mobileNav, ToggleMobileNav] = useCycle(false, true)
   const currentpath = usePathname();
+
+
+  
+  const handleNavButton = () => {
+    ToggleMobileNav()
+  }
   return (
     <div className='flex items-center justify-between fixed top-0 left-0 right-0 z-50 lg:pt-[64px]'>
         <div className='py-[24px] px-[24px] lg:pl-[55px]'>
@@ -25,16 +33,27 @@ function Header() {
         </div>
         {/*Mobile navbar */}
         <div className='px-[24px] md:hidden'>
-          <button onClick={() => setNavbar(!navbar)}>
+          <button  onClick={() => handleNavButton()}>
             <Image src="/shared/icon-hamburger.svg" width={24} height={21} />
           </button>
         </div>
-        {navbar && (
-            <div className='fixed top-0 bottom-0 right-0 backdrop-blur-2xl bg-navbar
+        <AnimatePresence >
+          {mobileNav && (
+            <motion.div key='mobileNav'
+            variants={{
+              open: {x: '0%'},
+              closed: {x:'100%'}
+            }}
+            animate='open'
+            initial='closed'
+            exit='closed'
+            transition={{delay: 0.1,duration:1, ease:'circOut'}}
+            
+            className='fixed top-0 bottom-0 right-0 backdrop-blur-2xl bg-navbar
               flex flex-col w-[254px] gap-[64.95px] md:hidden'
             >
               <div className='flex justify-end pt-[34px] px-[26.45px]'>
-                <button onClick={() => setNavbar(!navbar)}>
+                <button onClick={() => ToggleMobileNav()}>
                   <Image src="/shared/icon-close.svg" width={24} height={21} />
                 </button>
               </div>
@@ -44,8 +63,10 @@ function Header() {
                 <Link href="/crew" onClick={() => setNavbar(!navbar)}><span className='font-bold pr-[11px]'>02</span>CREW</Link>
                 <Link href="/technology" onClick={() => setNavbar(!navbar)}><span className='font-bold pr-[11px]'>03</span>TECHNOLOGY</Link>
               </div>
-            </div>
+            </motion.div>
           )}
+        </AnimatePresence>
+        
           
       
     </div>
